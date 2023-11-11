@@ -19,3 +19,10 @@ console.log(typeof umar);
 let a = 19;
 let b = String(a);
 console.log(typeof(b));
+
+// Operators ka gyan!!. +,-,*,/,%,**,<=,==,&&,||,&,|,>>,<<,++,--
+console.log("2">1); // -->true!
+console.log(null>=0); // -->true! (Avoid thise type of code!!)
+
+// === checks the value and data type of the variables!!
+console.log(2==="2"); //-->false;
