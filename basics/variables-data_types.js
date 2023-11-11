@@ -14,3 +14,8 @@ let isLogged = false;
 
 console.log(typeof umar);
 //This is used to check type of data
+
+/* Type conversion can also be done of data types as well*/
+let a = 19;
+let b = String(a);
+console.log(typeof(b));
