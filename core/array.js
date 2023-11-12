@@ -1,4 +1,4 @@
-//Arrays!!
+// Arrays!!
 const user = ["Diwanshu",19,true];
 // some methods for arrays are:
 user.push("hero") // gets add in the array!!
