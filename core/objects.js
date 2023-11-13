@@ -64,3 +64,20 @@ const datauser=[
   
   }
 ]
+
+// Object de-structure!!
+const course={
+  price: 999,
+  name: "js",
+  courseInstructor: "XYZ"
+}
+const {courseInstructor:ins} = course //destructring!!
+console.log(ins) //-->XYZ
+
+// JSON API INTRO!! (Apna kam kisi aur par daalna!!)
+
+// {
+//   "name" : "abc",
+//   "coursename" : "alpha",
+//   "price" : "free"
+// }
