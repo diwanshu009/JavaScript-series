@@ -37,3 +37,16 @@ function print(getarr){
 }
 console.log(print(arr))
 
+// Role of scope is important --> The curly braces are referred as the scope of the variable!!
+// --> let is used instead of var as var can be accessed outside of the scope as well which can cause lots of problem!!
+
+// Hoisting basics: we can not access the function before its declaration which is in form of variable !! For e.g:
+console.log(addTwo(5)) // Through an error!!
+const addTwo = function(num){
+  return num+2
+}
+
+console.log(addOne(4)) //--> This will get executed!!
+function addOne(num){
+  return num+1
+}
