@@ -50,3 +50,23 @@ console.log(addOne(4)) //--> This will get executed!!
 function addOne(num){
   return num+1
 }
+
+// Arrow function
+const add1 = (num1,num2) => {
+    return num1+num2 // Explicit return!!
+}
+console.log(add(3,4)) // --> 7
+  
+// --> Implicit return !!
+const sub = (num1,num2) => num1-num2
+console.log(sub(5,3)) // --> 2
+  
+//Immediately Invoked Function Expressions(IIFE) --> These are used to get rid of the pollution caused by global scope!!
+
+(function chai(){ // named IIFE
+    console.log(`Db connected!`);
+})(); // way to write two IIFE
+
+( (name) => {
+    console.log(`${name}`);
+})('diwanshu');  // Also the function will be executed more quickly!!
