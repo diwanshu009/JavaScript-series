@@ -53,17 +53,7 @@ const obj3 = Object.assign({}, obj1, obj2) //OR we ccan write it as:
 const obj4 = {...obj1,...obj2} //spread syntax!!
 
 //Array of objects !!->
-const datauser=[
-  {
-    
-  },
-  {
-    
-  },
-  {
-  
-  }
-]
+const datauser = [ {}, {}, {} ]
 
 // Object de-structure!!
 const course={
