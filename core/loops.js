@@ -62,7 +62,22 @@ console.log(ans)
 
 // Using foreach loop we can iterate over array of objects and can access the value of the objects!!
 
-// filter keyword
+// filter method --> It can be used to filter the data!!
 const nums = [1,2,3,4,5]
-const newNum = nums.filter( (num) =>  num>4)
+const newNum = nums.filter( (num) =>  num>4) // If we had opened the scope ({}), then we have to write return keyword!!
 console.log(newNum)
+
+// Chaining using map and filter. For e.g: 
+const number = [1,2,3,4,5,6,7,8,9,10]
+const newNumber = number
+                        .map( (num) => num*10 )
+                        .map( (num) => num+1 )
+                        .filter( (num) => num>44 )
+console.log(newNumber) // --> 51,61,71,81,91,101
+
+// Reduce method --> It is used to perform operation on accumulator and current value!!
+const myNum = [1,2,3,4,5]
+const sum = myNum.reduce( function (acc,currval) {
+    return acc+currval   //0+1+2+3+4+5
+},0 )  // acc initial value is the value after comma!! 
+console.log(sum) // --> 15
