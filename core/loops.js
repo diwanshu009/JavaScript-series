@@ -51,4 +51,18 @@ lan.forEach( (item) => {
     console.log(item)
 } )
 
+const ans =[]
+const no = [1,2,3,4,5,6]
+no.forEach( (item) => {
+    if(item>3){
+        ans.push(item)
+    }
+} )
+console.log(ans)
+
 // Using foreach loop we can iterate over array of objects and can access the value of the objects!!
+
+// filter keyword
+const nums = [1,2,3,4,5]
+const newNum = nums.filter( (num) =>  num>4)
+console.log(newNum)
