@@ -1,17 +1,16 @@
 // These are used to perform the similar task convienently
-
 for(let i = 1; i <= 10; i++) { // for loop
     console.log(i)
     // similar working of break and continue keyword as well!!
 }
 
-let i =1
+let i = 1
 while(i<=10){ // while loop
     console.log(i)
     i++ 
 }
 
-let j =1
+let j = 1
 do{          // do-while loop
     console.log(j)
     j++
@@ -51,7 +50,7 @@ lan.forEach( (item) => {
     console.log(item)
 } )
 
-const ans =[]
+const ans = []
 const no = [1,2,3,4,5,6]
 no.forEach( (item) => {
     if(item>3){
@@ -64,7 +63,7 @@ console.log(ans)
 
 // filter method --> It can be used to filter the data!!
 const nums = [1,2,3,4,5]
-const newNum = nums.filter( (num) =>  num>4) // If we had opened the scope ({}), then we have to write return keyword!!
+const newNum = nums.filter( (num) =>  num>4 ) // If we had opened the scope ({}), then we have to write return keyword!!
 console.log(newNum)
 
 // Chaining using map and filter. For e.g: 
