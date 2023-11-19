@@ -1,4 +1,5 @@
-console.log("Hello ji!!");
+console.log("Hello ji!!"); // Used to log on browser!!
+
 // --> Variables and DataTypes in JavaScript!!
 const name = "Diwanshu";
 //const are immutable!!
@@ -7,20 +8,22 @@ var umar = 19.1;
 // var are not used currently
 let age = 20;
 let isLogged = false;
-// So we use let as they are mutable as well!
+// let is mutable!!
 
-/* There are different types of data types as well and some of them are:
-    1.Primitive:    Boolean,Null,String,Number,Undefined,Symbol,BigInt  
-    2.Reference(Non-Primitive:  Arrays,Objects,Functions   */
+// --> var is globally scoped while let and const are block scoped. That's why var is not used now commonly!!
 
-console.log(typeof umar); //->number
+/* There are different types of data types and some of them are:
+    1.Primitive :    Boolean,Null,String,Number,Undefined,Symbol,BigInt  
+    2.Reference(Non-Primitive) :  Arrays,Objects,Functions   */
+
+console.log(typeof umar); //-> number
 console.log(typeof null); //-> object
 //This is used to check type of data
 
 /* Type conversion can also be done of data types as well*/
 let a = 19;
 let b = String(a);
-console.log(typeof(b));
+console.log(typeof(b)) // --> string
 
 // Operators ka gyan!!. +,-,*,/,%,**,<=,==,&&,||,&,|,>>,<<,++,--
 console.log("2">1); // -->true!
