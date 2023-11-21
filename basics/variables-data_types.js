@@ -25,7 +25,7 @@ let a = 19;
 let b = String(a);
 console.log(typeof(b)) // --> string
 
-// Operators ka gyan!!. +,-,*,/,%,**,<=,==,&&,||,&,|,>>,<<,++,--
+// Operators ka gyan!!. +,-,*,/,%,**,<=,==,&&,||,&,!,|,>>,<<,++,--
 console.log("2">1); // -->true!
 console.log(null>=0); // -->true! (Avoid thise type of code!!)
 

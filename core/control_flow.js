@@ -1,6 +1,6 @@
 // the code will only get executed if the condition is true else the rest part will get executed!!
 let a =49
-if(a>48){
+if(a>=48){
     console.log("a is greater than or equal to 48")
 }else{
     console.log("a is smaller than 48")
