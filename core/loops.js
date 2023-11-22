@@ -18,7 +18,7 @@ do{          // do-while loop
 
 // High Order loops:
 
-//  1. for of loop :
+//  1. for of loop : --> used for arrays!!
 const jhumka = ["arre","jhumka","gira","re"]
 for (const num of jhumka) {
     console.log(num)
@@ -34,8 +34,8 @@ for (const [key,value] of mp) {
 }
 // --> We can not iterate 'for of' loop on the objects!! To iterate on objects we use for in loop:
 
-// 2. For In loop : 
-const shortcut={
+// 2. For In loop : --> used for objects ,i.e key-value pairs!!
+let shortcut = {
     js: "javascript",
     cpp : "C++",
     py: "Python"
