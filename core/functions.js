@@ -1,4 +1,4 @@
-// Functions
+// Functions --> It increases the code reusability!!
 function add(a,b){    // parameter
     console.log(a+b); // we can also return here!!
 }
@@ -17,7 +17,7 @@ console.log(login("diwanshu"))
 function calculateCartPrice(... num1){ 
     return num1
 }
-console.log(calculateCartPrice(200,400,600))
+console.log(calculateCartPrice(200,400,600)) //--> [200,400,600] !!
   
 // handling functions with objects
 const user={
@@ -38,7 +38,7 @@ function print(getarr){
 console.log(print(arr))
 
 // Role of scope is important --> The curly braces are referred as the scope of the variable!!
-// --> let is used instead of var as var can be accessed outside of the scope as well which can cause lots of problem!!
+// --> let is used instead of var as var can be accessed outside of the scope (globally scoped!!) which can cause lots of problem!!
 
 // Hoisting basics: we can not access the function before its declaration which is in form of variable !! For e.g:
 console.log(addTwo(5)) // Through an error!!
