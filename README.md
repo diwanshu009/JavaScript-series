@@ -1,2 +1,2 @@
 # MERN-series
-A code repo for revising mern stack in software development!!
+A code repo for revising mern concepts in software development!!

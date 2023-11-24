@@ -7,6 +7,7 @@ const user1={
   [mySym] : "key", // way to write Symbol data type in obejct!!
   lastLoginDays : ["Mon" ,"Sun"]
 }
+
 // We can access the object data by these ways:
 console.log(user1.age)
 console.log(user1["age"]) // better way to access!!
@@ -31,6 +32,7 @@ tinderUser.name = "Diwanshu"
 tinderUser.age = 19
 console.log(Object.keys(tinderUser))
 //-->Here, we are getting the keys of the object in the array, Similarly we can get the values through .values()!!
+
 console.log(tinderUser.hasOwnProperty("age"))
 //--> checks whether the object has the property or not!!
 
