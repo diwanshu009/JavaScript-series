@@ -13,3 +13,6 @@
 For Live demo:
 browser > inspect > Sources
 create a snippet with few functions and visually experience the call stack. */
+
+// Window object k under browser k related saare features dale hue h, jo js language use kr skti hai,jo usme accesible bhi nhi hai!!
+// For e.g: alert,prompt,confirm,document,etc.
