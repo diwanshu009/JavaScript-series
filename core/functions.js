@@ -37,6 +37,8 @@ function print(getarr){
 }
 console.log(print(arr))
 
+// first class function: kisi function ko ek value k roop me store krana !!
+
 // Role of scope is important --> The curly braces are referred as the scope of the variable!!
 // --> let is used instead of var as var can be accessed outside of the scope (globally scoped!!) which can cause lots of problem!!
 

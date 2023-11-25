@@ -1,5 +1,6 @@
 // Arrays!!
 const user = ["Diwanshu",19,true];
+console.log(typeof user) // --> object
 // some methods for arrays are:
 user.push("hero") // gets add in the array!!
 user.pop() // last value gets removed
@@ -12,7 +13,7 @@ user.splice(1,3) // here -> 3 is inclusive and ⭐️ the elements gets deleted 
 
 const user2 = ["Babu bhaiya", 25,false];
 const users = user.concat(user2); // to merge(combine) the arrays we use -> .concat() !! OR we can write it as-:>
-const us12 = [...user,...user2]; //spread syntax(glass example!!)
+const us12 = [...user,...user2]; //spread syntax(glass example!!) --> based upon call by value (copy krne ka tarika!!)
 const arr = user.flat(Infinity) //to get elements in single array if they are present in array of array.....!!
 //to convert any string, number into array we use Array.from()!!
 console.log(Array.from("Diwanshu"))

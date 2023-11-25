@@ -8,6 +8,8 @@ const user1={
   lastLoginDays : ["Mon" ,"Sun"]
 }
 
+// we can delete the value by using--> delete user1.age;
+
 // We can access the object data by these ways:
 console.log(user1.age)
 console.log(user1["age"]) // better way to access!!

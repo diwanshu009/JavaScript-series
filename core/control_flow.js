@@ -13,7 +13,7 @@ if(a>=48){
    5. Ternary operator (same)!!
 */
 
-// falsy values: false, 0, -0, BigInt, "", null, undefined, Nan(not a number).
+// falsy values: false, 0, -0, BigInt, "", null, undefined, NaN(not a number),document.all 
 // truthy values: "0", 'false', " ", [], {}, function(){}
 
 // Nullish Coalescing Operator (??) : null undefined (it will assign the possible first value to the variable)
