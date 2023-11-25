@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit and remove elements in DOM</title>
 </head>
+<style>
+    .bhallu{
+        background-color: yellow;
+    }
+</style>
 <body style="background-color: #212121; color: #fff;">
     <ul class="language">
         <li>Javascript</li>
@@ -29,8 +34,8 @@
     const lastChild = document.querySelector('li:last-child') 
     lastChild.remove() // last child gets deleted(removed)!!
 
-    // To add class to any element we use li.classList.add('round-border')
-    // To remove we use, li.classList.remove('round-border')
+    // To add class to any element we use ul.classList.add('bhallu')
+    // To remove we use, ul.classList.remove('bhallu')
 
 </script>
 </html>
