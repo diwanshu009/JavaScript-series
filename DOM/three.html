@@ -5,16 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit and remove elements in DOM</title>
 </head>
-<body style="background-color: 212121; color: #fff;">
+<body style="background-color: #212121; color: #fff;">
     <ul class="language">
         <li>Javascript</li>
     </ul>
 </body>
 <script>
     function optiLan(lan){
-        const li = document.createElement('li')
-        li.appendChild(document.createTextNode(lan))
-        
+        const li = document.createElement('li') // Element gets created!!
+        li.appendChild(document.createTextNode(lan)) // New Language gets added to new li!!
+        document.querySelector('.language').appendChild(li) // new li gets added in the li's list!!
     }
+    optiLan("Typescript")
+
+    // Edit -->
+    // 1st way: --> document.querySelector("li:nth-child(2)").innerHTML="Golang" // Typescript will be changed to golang!!
+    // Optimised way: -->
+    const newLi = document.createElement('li')
+    newLi.textContent= "Golang"
+    document.querySelector("li:nth-child(2)").replaceWith(newLi) // 2nd child gets replaced by newLi
+
+    //Remove -->
+    const lastChild = document.querySelector('li:last-child') 
+    lastChild.remove() // last child gets deleted(removed)!!
+
 </script>
 </html>
