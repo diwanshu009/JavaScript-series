@@ -7,7 +7,6 @@
 
 ## project1 solution
 ``` javascript
-
 const buttons = document.querySelectorAll('.button');
 const body = document.querySelector('body');
 
@@ -51,4 +50,20 @@ form.addEventListener('submit',function(e){
     result.innerHTML = `<span> ${bmi} </span>`
   }
 });
+```
+## project3 solution
+
+```javascript
+const clock = document.querySelector('#clock')
+
+setInterval(function(){
+  let date = new Date()
+  clock.innerHTML = date.toLocaleTimeString()
+},1000)
+```
+## project4 solution
+
+``` javascript
+
+
 ```
