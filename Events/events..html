@@ -32,7 +32,7 @@
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
-    /* --> ⭐️ Event propagation: (If false is writeen after function) 1.(Bubbling -> Niche se upper jata h, => li,ul.....):
+    /* --> ⭐️ Event propagation: (If false is written after function) 1.(Bubbling -> Niche se upper jata h, => li,ul.....):
     If we click on owl image first, there will be alert of owl clicked,then clicked inside the url will get logged!! */
 
     /* 2. Capturing mode -> Upper se niche jata h, => ul,li,.....):
@@ -53,7 +53,6 @@
     //     console.log("google clicked");
     // }, false)
    
-    
     document.querySelector('#images').addEventListener('click', function(e){
         console.log(e.target.tagName); // target matlab ki kis html k code se ye event aa rha h!!
         if (e.target.tagName === 'IMG') {
