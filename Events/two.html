@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Async natue -basics</h1>
+    <h1>Async natue-basics</h1>
     <button id="stop">Stop</button>
     <button id="start">Start</button>
 </body>
@@ -20,6 +20,15 @@
         console.log("Stopped!!")
     })
 
+    const c = function(){
+        console.log("Pyar karoge toh pakka phasoge!!")
+    }
+    document.querySelector('#start').addEventListener('click',function(){
+        const d = setInterval(c,1000)
+        document.querySelector('#stop').addEventListener('click',function(){
+            clearInterval(d)
+        })
+    })
     
 </script>
 </html>
