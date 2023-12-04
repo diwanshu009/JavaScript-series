@@ -8,7 +8,6 @@
 </head>
 <body style="background-color: #212121; color: #fff;">
     <div class="parent">
-        <!-- this is a comment -->
         <div class="day">Monday</div>
         <div class="day">Tuesday</div>
         <div class="day">Wednesday</div>
@@ -32,18 +31,23 @@ The DOM represents the document as a tree structure, where each node in the tree
     //      console.log(parent.children[i].innerHTML);
     // } --> All the days get printed!!
 
+    // document.body.firstElementChild --> It will only give the fist element child to access!!
+    // document.body.firstElementChild.childNodes --> It will also access the comment and textNode!!
+    // document.body.firstElement.children --> It will only give access to children of firstElement (only elements)!!
+
+
     parent.children[1].style.color = "orange" // Used to change the color!!
-    // console.log(parent.firstElementChild);
+    // console.log(parent.firstElementChild); (It will ignore the textNode and will count the element child only!!)
     // console.log(parent.lastElementChild);
 
     const dayOne = document.querySelector('.day')
     // console.log(dayOne); --> Monday wala block (code)
-    // console.log(dayOne.parentElement); --> parent wala block
+    // console.log(dayOne.parentElement); --> to access parentNode
     // console.log(dayOne.nextElementSibling); --> Tuesday wala block
 
     console.log("NODES: ", parent.childNodes);
     /*--> A nodelist is a collection of document nodes which includes text nodes, attribute nodes and element nodes. 
-    A line break is also counted in nodelist but only first one. All subsequent line breaks are ignored by browser*/
+    A line break is also counted in nodelist (text node). All subsequent line breaks are ignored by browser */
 
 </script>
 </html>
