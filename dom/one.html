@@ -33,7 +33,7 @@ The DOM represents the document as a tree structure, where each node in the tree
 
     // document.body.firstElementChild --> It will only give the fist element child to access!!
     // document.body.firstElementChild.childNodes --> It will also access the comment and textNode!!
-    // document.body.firstElement.children --> It will only give access to children of firstElement (only elements)!!
+    // document.body.firstElement.children --> It will only give access to children of firstElement (HTML elements only)!!
 
 
     parent.children[1].style.color = "orange" // Used to change the color!!
@@ -43,10 +43,10 @@ The DOM represents the document as a tree structure, where each node in the tree
     const dayOne = document.querySelector('.day')
     // console.log(dayOne); --> Monday wala block (code)
     // console.log(dayOne.parentElement); --> to access parentNode
-    // console.log(dayOne.nextElementSibling); --> Tuesday wala block
+    // console.log(dayOne.nextElementSibling); --> Tuesday wala block (jinke parent same hote hai)!!
 
     console.log("NODES: ", parent.childNodes);
-    /*--> A nodelist is a collection of document nodes which includes text nodes, attribute nodes and element nodes. 
+    /*--> A nodelist is a collection of document nodes which includes text nodes, comment nodes and element nodes. 
     A line break is also counted in nodelist (text node). All subsequent line breaks are ignored by browser */
 
 </script>
