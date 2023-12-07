@@ -33,7 +33,7 @@ body{
     width:18vmin;
     border:none;
 }
-.reset{
+#reset{
     background-color: #C69DD2;
     height:5vmin;
     width:12vmin;
@@ -42,4 +42,24 @@ body{
     border:none;
     font-family:'Montserrat', sans-serif;
     font-weight:900;
+}
+#msg{
+    color: #fff;
+    font-size:5vmin;
+}
+.msg-cont{
+    height:30vmin;
+}
+.hide{
+    display:none;
+}
+#newGame{
+    color: #bec666;
+    border-radius:1rem;
+    border:none;
+    font-weight: 800;
+    background-color: black;
+    height:5vmin;
+    width:10vmin;
+    font-family:'Montserrat', sans-serif;
 }
