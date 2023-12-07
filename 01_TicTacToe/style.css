@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #A390E4;
+    text-align:center;
+}
+.container{
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height:100px;
+    width:100px;
+}
