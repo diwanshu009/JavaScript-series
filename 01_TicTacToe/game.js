@@ -1,4 +1,5 @@
 // This is my first good to go project!!
+// Explaining all the logic in game.js!!
 
 let buttons = document.querySelectorAll('.box');
 let resetBtn = document.querySelector('#reset');
