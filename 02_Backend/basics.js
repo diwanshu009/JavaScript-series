@@ -15,3 +15,6 @@ Now the browser is able to send requests to the actual server.
 
 After the server sends data to the client, the connection will be closed. If we want something else from the server we 
 should have to re-establish the connection between the client and the server. */
+
+// If we want to create our own url, we have to purchase our own IP!!
+// There 4 types of request and these are : get(default),put,post,delete
