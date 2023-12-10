@@ -7,3 +7,11 @@ and more. Node.js runs on the V8 JavaScript engine, and executes JavaScript code
 for transferring data from one computer to another. Data such as text, images, and other multimedia files are shared on 
 the World Wide Web. Whenever a web user opens their web browser, the user indirectly uses HTTP */
 
+/* Working of HTTP server:
+First of all, whenever we want to open any website then first open a web browser after that we will type the URL of that
+website (e.g., www.facebook.com ). This URL is now sent to Domain Name Server (DNS). Then DNS first check records for 
+this URL in their database, then DNS will return the IP address to the web browser corresponding to this URL. 
+Now the browser is able to send requests to the actual server. 
+
+After the server sends data to the client, the connection will be closed. If we want something else from the server we 
+should have to re-establish the connection between the client and the server. */
