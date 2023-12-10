@@ -18,3 +18,5 @@ should have to re-establish the connection between the client and the server. */
 
 // If we want to create our own url, we have to purchase our own IP!!
 // There 4 types of request and these are : get(default),put,post,delete
+
+// Express is a library to create http server!!
