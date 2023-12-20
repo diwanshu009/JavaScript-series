@@ -78,7 +78,7 @@ async function getUsers(){    // returns a promise always!!
     try {
         const response =  await fetch('https://jsonplaceholder.typicode.com/users')
         const data = await response.json()  // type conversion to object!!
-        console.log(data);
+        console.log(data); // meaningful data!!
     } catch (error) {
         console.log("E:" ,error)
     }
