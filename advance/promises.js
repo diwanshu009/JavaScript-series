@@ -1,3 +1,5 @@
+// async-await >> promises >> callbacks !!
+
 /* In JavaScript, promises are a way to handle asynchronous operations. Asynchronous operations are tasks that take some
    time to complete, such as fetching data from a server or reading a file. Promises provide a clean and more readable way 
    to work with asynchronous code compared to traditional callback-based approaches. A promise can be in of 3 states:
@@ -41,11 +43,12 @@ promiseThree.then(function(user){
     console.log(username);
 }).catch(function(error){     // -->  if rejected we use catch(function(){})
     console.log(error)
-}).finally(()=>{      // -> It will tell whether th work has been done or not (Always gets executed)!!
+}).finally(()=>{      // -> It will tell whether the work has been done or not (Always gets executed)!!
     console.log("Finally,the promise is either resolved or rejected!!")
 })
 
 // Async-await syntax !! --> It can not directly handle the errors!! (try catch lena padega!!)
+// await always work inside an async function!!
 
 const promiseFour = new Promise(function(resolve,reject){
     setTimeout(function(){
@@ -58,11 +61,11 @@ const promiseFour = new Promise(function(resolve,reject){
     },1000)
 })
 
-async function consumePromiseFour(){ // Alternate syntax for then-catch syntax!!
-    try{
-        const response = await promiseFour
+async function consumePromiseFour(){ // Better syntax than then-catch syntax!!
+    try{        // if resolved!!
+        const response = await promiseFour // wait till the response comes , then exectues the next lines of code!! 
         console.log(response)
-    }catch(error){
+    }catch(error){     // if rejected!!
         console.log(error)
     }
 }
@@ -71,11 +74,11 @@ consumePromiseFour()
 // Now we can fetch in javascript ⭐️ -->
 
 // fecth by async-await -->
-async function getUsers(){
+async function getUsers(){    // returns a promise always!!
     try {
         const response =  await fetch('https://jsonplaceholder.typicode.com/users')
-        const data = await response.json()
-        console.log(data);
+        const data = await response.json()  // type conversion to object!!
+        console.log(data); // meaningful data!!
     } catch (error) {
         console.log("E:" ,error)
     }
