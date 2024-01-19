@@ -85,7 +85,7 @@ async function getUsers(){    // returns a promise always!!
 }
 getUsers()
 
-// fetch by then-catch -->
+// fetch by then-catch(chaining) -->
 fetch('https://api.github.com/users/hiteshchoudhary')
 .then(function(response,reject){
     return response.json()
